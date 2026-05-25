@@ -26,20 +26,3 @@ El desarrollo se realizó cumpliendo rigurosamente todas las directrices de la g
 * **Diseño Visual y Responsivo:** Estructura CSS semántica y moderna adaptable a dispositivos móviles, tablets y computadoras de escritorio.
 * **Funcionalidad Extra (UX Premium):** Implementación de un conmutador dinámico de **Modo Oscuro / Modo Claro** mediante la manipulación de clases nativas en JavaScript para mejorar la accesibilidad del usuario.
 * **Tipografía Estilizada:** Integración de Google Fonts (`Montserrat` para encabezados con presencia institucional y `Open Sans` para máxima legibilidad).
-
----
-
-## 📂 Estructura del Repositorio
-Siguiendo los lineamientos de orden exigidos en la Sección 9 del proyecto, los archivos se organizan de la siguiente manera:
-
-```text
-desafio-fibonacci-primos/
-│
-├── index.html          # Estructura semántica, formularios y secciones del proyecto
-├── README.md           # Documentación general del proyecto (este archivo)
-│
-├── css/
-│   └── estilos.css     # Estilos visuales, diseño responsivo y Modo Oscuro
-│
-└── js/
-    └── script.js       # Lógica matemática de Fibonacci y control dinámico del DOM
