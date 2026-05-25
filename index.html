@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas que resuelven problemas: Fibonacci en Sistemas de Riego</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Matemáticas que resuelven problemas: Fibonacci y Números Primos en la vida real</h1>
+        <h2>Desafío Web: Automatización de Riego Eficiente</h2>
+    </header>
+
+    <main class="container">
+        
+        <section class="card">
+            <h2>1. Contexto del Problema Real</h2>
+            <p>
+                En la agricultura moderna y la ecología, la optimización del agua es un desafío crítico debido a las sequías y la escasez de recursos hidráulicos. No todas las zonas de un cultivo absorben o necesitan el agua con la misma velocidad ni en la misma cantidad; los sectores iniciales, centrales o con mayor densidad de raíces requieren un flujo más abundante que se distribuye de manera decreciente hacia las áreas externas.
+            </p>
+            <p>
+                Este proyecto resuelve el problema de la distribución controlada de un tanque de agua limitado. En lugar de repartir el agua a ciegas o de forma lineal, utilizamos un modelo de distribución basado en proporciones naturales para optimizar cada gota sin exceder el límite disponible.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>2. Explicación del Algoritmo (Sucesión de Fibonacci)</h2>
+            <p>
+                La <strong>Serie de Fibonacci</strong> es una secuencia matemática infinita donde cada número es la suma de los dos anteriores ($1, 1, 2, 3, 5, 8, 13, \dots$). En la naturaleza, esta sucesión rige la disposición de las hojas en las ramas, las espirales de los girasoles y los patrones de crecimiento orgánico.
+            </p>
+            <p>
+                <strong>¿Cómo se aplica aquí?</strong> El algoritmo toma el total de litros de agua ingresados por el usuario y calcula los primeros términos de Fibonacci correspondientes a la cantidad de zonas de cultivo. Al sumar estos términos, hallamos las "unidades proporcionales totales". Luego, dividimos el agua entre esas unidades y asignamos a cada sector la cantidad exacta multiplicando su peso en la escala Fibonacci, logrando un riego escalonado, eficiente y matemáticamente armónico.
+            </p>
+        </section>
+
+        <section class="card form-section">
+            <h2>3. Simulador de Distribución de Riego</h2>
+            <form id="formularioRiego" onsubmit="event.preventDefault(); calcularRiego();">
+                
+                <div class="form-group">
+                    <label for="litros">Cantidad total de agua disponible (Litros):</label>
+                    <input type="number" id="litros" placeholder="Ej. 140" min="1" step="any" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="zonas">Número de sectores de cultivo a regar:</label>
+                    <input type="number" id="zonas" placeholder="Ej. 4" min="1" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Calcular Distribución Óptima</button>
+            </form>
+        </section>
+
+        <section id="resultado" class="card result-section">
+            <p class="placeholder-text">Ingresa los datos en el formulario y presiona el botón para generar el reporte de irrigación.</p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+<button class="btn-toggle-dark" id="darkToggleBtn" onclick="alternarModoOscuro()">🌙 Modo Oscuro</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+</html>
